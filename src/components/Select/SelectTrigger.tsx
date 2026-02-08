@@ -16,8 +16,14 @@ export function SelectTrigger() {
         border: "1px solid #ccc",
         cursor: "pointer",
       }}
+      className={
+        context.selected === "옵션을 선택해주세요."
+          ? "text-normal"
+          : "text-primary"
+      }
     >
-      {context.selected} {/* 선택된 값이 버튼에 표시됨 */}
+      {context.selected}
+      {/* 선택된 값이 버튼에 표시됨 */}
       <span style={{ float: "right" }}>{context.isOpen ? "▲" : "▼"}</span>
     </div>
   );

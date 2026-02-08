@@ -17,11 +17,11 @@ export default function App() {
             value={value}
             onChange={(e) => setValue(e.target.value)}
           />
-          <Select defaultValue="미선택">
+          <Select defaultValue="옵션을 선택해주세요.">
             <Select.Trigger />
             <Select.List>
-              <Select.Option value="A">옵션 A</Select.Option>
-              <Select.Option value="B">옵션 B</Select.Option>
+              <Select.Option value="A">A</Select.Option>
+              <Select.Option value="B">B</Select.Option>
             </Select.List>
           </Select>
         </div>
