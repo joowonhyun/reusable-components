@@ -1,0 +1,94 @@
+@import 'tailwindcss';
+
+@utility typo-12 {
+  font-size: 12px;
+  line-height: 16px;
+}
+@utility typo-14 {
+  font-size: 14px;
+  line-height: 20px;
+}
+@utility typo-16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+@utility typo-18 {
+  font-size: 18px;
+  line-height: 24px;
+}
+@utility typo-20 {
+  font-size: 20px;
+  line-height: 28px;
+}
+@utility typo-24 {
+  font-size: 24px;
+  line-height: 32px;
+}
+@utility styled-scrollbar {
+  margin-right: 4px;
+  &::-webkit-scrollbar-track {
+    background-color: var(--color-main);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-line);
+  }
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+  }
+}
+
+@utility player-range {
+  overflow: hidden;
+  height: 12px;
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgba(230, 230, 230, 1);
+  border-radius: 999px;
+  width: 100%;
+  outline: none;
+
+  &::-webkit-slider-runnable-track {
+    height: 12px;
+    -webkit-appearance: none;
+    background: transparent; /* 트랙 배경을 투명하게 설정 */
+    cursor: pointer; /* 커서 스타일 추가 */
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: rgba(255, 107, 53, 1);
+    box-shadow: -200px 0 0 195px rgba(255, 107, 53, 1); /* 진행 바 효과 조정 */
+    cursor: pointer; /* 커서 스타일 추가 */
+    position: relative;
+    z-index: 1; /* 썸이 트랙 위에 올바르게 표시되도록 */
+  }
+
+  &::-moz-range-track {
+    height: 12px;
+    background: rgba(230, 230, 230, 1);
+    border-radius: 999px;
+  }
+
+  &::-moz-range-thumb {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: white;
+    border: none; /* Firefox에서 기본 테두리 제거 */
+    box-shadow: -200px 0 0 195px rgba(255, 107, 53, 1);
+    cursor: pointer;
+  }
+
+  &::-moz-range-progress {
+    background: rgba(255, 107, 53, 1);
+    height: 12px;
+    border-radius: 999px;
+  }
+}
